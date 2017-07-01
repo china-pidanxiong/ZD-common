@@ -45,8 +45,9 @@
 		</dependency>
 		<!-- 单元测试 -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<!-- 日志处理 -->
 		<dependency>

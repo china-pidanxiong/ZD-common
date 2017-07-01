@@ -33,9 +33,8 @@ public class JsonUtils
 			return string;
 		} catch (JsonProcessingException e)
 		{
-			e.printStackTrace();
+			throw new RuntimeException("Obj转换为Json串出错！", e);
 		}
-		return null;
 	}
 
 	/**
@@ -45,7 +44,7 @@ public class JsonUtils
 	 * @param clazz 对象中的object类型
 	 * @return
 	 */
-	public static <T> T json2Pojo(String jsonData, Class<T> beanType)
+	public static <T> T json2Obj(String jsonData, Class<T> beanType)
 	{
 		try
 		{
@@ -53,9 +52,8 @@ public class JsonUtils
 			return t;
 		} catch (Exception e)
 		{
-			e.printStackTrace();
+			throw new RuntimeException("Json串转换为Obj出错！", e);
 		}
-		return null;
 	}
 
 	/**
@@ -75,8 +73,7 @@ public class JsonUtils
 			return list;
 		} catch (Exception e)
 		{
-			e.printStackTrace();
+			throw new RuntimeException("Json串转换为List出错！", e);
 		}
-		return null;
 	}
 }
