@@ -6,13 +6,13 @@
 		<groupId>cn.zhangdsw</groupId>
 		<artifactId>zhangdsw</artifactId>
 		<version>0.1</version>
-		<relativePath>../../ZD-parent/pom.xml</relativePath>
+		<relativePath>../ZD-parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>cn.zhangdutl</groupId>
 	<artifactId>zhangdutl</artifactId>
 	<packaging>jar</packaging>
-	<name>cn.zhangdsw.zhangdutl.jar</name>
+	<name>cn.zhangdsw.zhangdutl-${project.version}.jar</name>
 
 	<dependencies>
 		<!-- 时间操作组件 -->
